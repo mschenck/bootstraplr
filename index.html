@@ -35,8 +35,8 @@
       
                 <div class="nav-collapse collapse">
                   <ul class="nav">
-                    <li class="active"><a href="http://mschenck.github.io">Github</a></li>
-                    <li><a href="http://www.mschenck.com">Tumblr</a></li>
+                    <div class="span4 leadactive"><a href="http://mschenck.github.io">Github</a></div>
+                    <li><a href="http://www.mschenck.com">Tumblr</a></div>
                   </ul>
                 </div>
       
@@ -56,33 +56,34 @@
           {Description}
         </p>
         {/block:Description} 
-        </p>
       </div>
 
- <ol id="posts">
+      <div class="row-fluid" id="posts">
+
             {block:Posts}
+
                 {block:Text}
-                    <li class="post text">
+                    <div class="span4 lead post text">
                         {block:Title}
                             <h3><a href="{Permalink}">{Title}</a></h3>
                         {/block:Title}
 
                         {Body}
-                    </li>
+                    </div>
                 {/block:Text}
 
                 {block:Photo}
-                    <li class="post photo">
+                    <div class="span4 lead post photo">
                         <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
 
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
-                    </li>
+                    </div>
                 {/block:Photo}
 
                 {block:Panorama}
-                    <li class="post panorama">
+                    <div class="span4 lead post panorama">
                         {LinkOpenTag}
                             <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
                         {LinkCloseTag}
@@ -90,80 +91,81 @@
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
-                    </li>
+                    </div>
                 {/block:Panorama}
 
                 {block:Photoset}
-                    <li class="post photoset">
+                    <div class="span4 lead post photoset">
                         {Photoset-500}
 
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
-                    </li>
+                    </div>
                 {/block:Photoset}
 
                 {block:Quote}
-                    <li class="post quote">
+                    <div class="span4 lead post quote">
                         "{Quote}"
 
                         {block:Source}
                             <div class="source">{Source}</div>
                         {/block:Source}
-                    </li>
+                    </div>
                 {/block:Quote}
 
                 {block:Link}
-                    <li class="post link">
+                    <div class="span4 lead post link">
                         <a href="{URL}" class="link" {Target}>{Name}</a>
 
                         {block:Description}
                             <div class="description">{Description}</div>
                         {/block:Description}
-                    </li>
+                    </div>
                 {/block:Link}
 
                 {block:Chat}
-                    <li class="post chat">
+                    <div class="span4 lead post chat">
                         {block:Title}
                             <h3><a href="{Permalink}">{Title}</a></h3>
                         {/block:Title}
 
                         <ul class="chat">
                             {block:Lines}
-                                <li class="{Alt} user_{UserNumber}">
+                                <div class="span4 lead{Alt} user_{UserNumber}">
                                     {block:Label}
                                         <span class="label">{Label}</span>
                                     {/block:Label}
 
                                     {Line}
-                                </li>
+                                </div>
                             {/block:Lines}
                         </ul>
-                    </li>
+                    </div>
                 {/block:Chat}
 
                 {block:Video}
-                    <li class="post video">
+                    <div class="span4 lead post video">
                         {Video-500}
 
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
-                    </li>
+                    </div>
                 {/block:Video}
 
                 {block:Audio}
-                    <li class="post audio">
+                    <div class="span4 lead post audio">
                         {AudioPlayerBlack}
 
                         {block:Caption}
                             <div class="caption">{Caption}</div>
                         {/block:Caption}
-                    </li>
+                    </div>
                 {/block:Audio}
+
             {/block:Posts}
-        </ol>
+        </div>
 
         <p id="footer">
             {block:PreviousPage}
