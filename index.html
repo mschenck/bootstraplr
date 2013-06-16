@@ -6,8 +6,7 @@
     <title>{Title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
-
+    <link href="http://static.tumblr.com/1lfs5rf/IiLmohwro/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="{Favicon}">
     <link rel="alternate" type="application/rss+xml" href="{RSS}">
     {block:Description}
@@ -31,12 +30,11 @@
                   <span class="icon-bar"></span>
                 </button>
       
-                <a class="brand" href="#"></a>
+                <a class="brand" href="#">{Title}</a>
       
                 <div class="nav-collapse collapse">
                   <ul class="nav">
-                    <div class="span4 leadactive"><a href="http://mschenck.github.io">Github</a></div>
-                    <li><a href="http://www.mschenck.com">Tumblr</a></div>
+                    <li class="lead active"><a href="/">Tumblr</a></li>
                   </ul>
                 </div>
       
@@ -132,13 +130,13 @@
 
                         <ul class="chat">
                             {block:Lines}
-                                <div class="span4 lead{Alt} user_{UserNumber}">
+                                <li class="span4 lead{Alt} user_{UserNumber}">
                                     {block:Label}
                                         <span class="label">{Label}</span>
                                     {/block:Label}
 
                                     {Line}
-                                </div>
+                                </li>
                             {/block:Lines}
                         </ul>
                     </div>
@@ -181,7 +179,7 @@
       
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://static.tumblr.com/1lfs5rf/Dqdmohwlc/jquery.min.js"></script>
+    <script src="http://static.tumblr.com/1lfs5rf/ks3mohwj8/bootstrap.min.js" type="text/javascript"></script>
   </body>
 </html>
